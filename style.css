@@ -1,0 +1,299 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+}
+
+/* Header Styles */
+header {
+    background-color: pink;
+    color: black;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 100px; /* Adjust width */
+    height: auto; /* Auto height for responsive resizing */
+}
+
+.site-name {
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: linear-gradient(to bottom, pink, pink);
+    background-size: 100% 300px;
+    background-position: 0% 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center; /* Center text */
+    padding: 0 20px; /* Adjust padding */
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background-color: black;
+    color: pink;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+footer {
+    background-color: pink;
+    color: black;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
+
+/* Global Styles */
+h2 {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid pink;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: pink;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+/* Error Messages */
+.error-message {
+    color: red; /* Correct color value */
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Live Chat Section Styles */
+#live-chat-btn {
+    background-color: #4CAF50;
+    color: pink;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#live-chat-btn:hover {
+    background-color: #3e8e41;
+}
+
+#live-chat-window {
+    display: none;
+    background-color: pink;
+    padding: 20px;
+    border: 1px solid red;
+    width: 300px;
+    position: fixed; /* Fixed positioning */
+    bottom: 20px; /* Adjust bottom spacing */
+    right: 20px; /* Adjust right spacing */
+    z-index: 999; /* Ensure it's on top of other content */
+}
+
+/* Contact Information Section Styles */
+#contact-info li {
+    display: flex; /* Use flexbox for icon positioning */
+    align-items: center; /* Center vertically */
+    margin-bottom: 10px;
+}
+
+#contact-info i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+
+/* Collection Container Styles */
+.collection-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0;
+  }
+  
+  /* Collection Item Styles */
+  .collection {
+    display: block;
+    width: calc(20% - 20px);
+    margin: 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .collection:hover {
+    transform: scale(1.05);
+    box-shadow: blue;
+  }
+  
+  .collection-title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .collection-title a {
+    text-decoration: none;
+    color:blue;
+  }
+  
+  .collection-title a:hover {
+    color: red;
+  }
+  
+  .collection img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+   .collection {
+      width: calc(33.33% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+   .collection {
+      width: calc(50% - 20px);
+    }
+  }
+
+
+
+
+
+
+  /* Collection Container Styles */
+.collection-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color : skyblue;
+    border: 1px solid blue;
+    box-shadow: pink;
+  }
+  
+  /* Collection Grid Styles */
+  .collection-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  /* Collection Item Styles */
+  .collection-item {
+    background-color: pink;
+    padding: 20px;
+    border: 1px solid blue ;
+    border-radius: 10px;
+    box-shadow: green;
+  }
+  
+  .collection-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .collection-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .collection-item .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 10px;
+  }
+  
+  .collection-item .description {
+    font-size: 14px;
+    color: blue;
+    margin-bottom: 20px;
+  }
+  
+  .collection-item button {
+    background-color:green;
+    color: red;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .collection-item button:hover {
+    background-color:pink;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .collection-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .collection-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .collection-item {
+      margin-bottom: 20px;
+    }
+  }
